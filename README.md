@@ -14,7 +14,10 @@ docker run --name jenkins -p 8080:8080 -p 50000:50000 -v /var/run/docker.sock:/v
 ```
 
 ## Recover the default password to init the jenkins configuration wizard
+
+```
 $ docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+```
 
 Follow the wizad and configure the default admin password and install default plugins
 
@@ -24,6 +27,7 @@ Install the docker plugin called docker-pipeline from jenkins plugin manager
 ## Check docker plugin 
 Create a new pìpeline to check the node docker container
 
+```
 pipeline {
     agent { docker { image 'node:16.13.1-alpine' } }
     stages {
@@ -34,3 +38,4 @@ pipeline {
         }
     }
 }
+```
