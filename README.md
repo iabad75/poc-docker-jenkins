@@ -42,4 +42,4 @@ pipeline {
 
 ## Some samples
 
-[Some Jenkins Docker samplesj](https://github.com/masalinas/jenkins-docker-samples)
+[Some Jenkins Docker samples](https://github.com/masalinas/jenkins-docker-samples)
