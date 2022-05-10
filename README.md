@@ -10,7 +10,7 @@ docker build -t jenkins-docker .
 This docker image access to  host docker socket to deploy containers in the host machine
 
 ```
-docker run --name jenkins -p 8080:8080 -p 50000:50000 -v /var/run/docker.sock:/var/run/docker.sock jenkins-docker
+docker run --name jenkins -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock jenkins-docker
 ```
 
 ## Recover the default password to init the jenkins configuration wizard
