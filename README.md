@@ -39,3 +39,7 @@ pipeline {
     }
 }
 ```
+
+## Some samples
+
+[Some Jenkins Docker samplesj(https://github.com/masalinas/jenkins-docker-samples)
